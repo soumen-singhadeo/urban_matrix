@@ -28,7 +28,7 @@ st.title("Landscape Metrics Calculation")
 
 
 
-patch_option = ('Perimeter Area Ratio MN','Perimeter MN','Shape Index MN','Euclidean Nearest Neighbor','Fractal Dimension')
+patch_option = ('Perimeter Area Ratio','Perimeter','Shape Index','Euclidean Nearest Neighbor','Fractal Dimension')
 Class_option = ('Proportion of Landscape','Edge Density','Total Area','Number of Patches','Patch Density','Largest Patch Index','Total Edge','Landscape Shape Index')
 landscape_option = ('LEI','Total Area','Edge Density','Number of Patches','Patch Density','Largest Patch Index','Landscape Shape Index','Effective Mesh Size','Shannon Diversity Index')
 
@@ -36,18 +36,18 @@ landscape_option = ('LEI','Total Area','Edge Density','Number of Patches','Patch
 
 
 
-option = st.sidebar.selectbox('Choose Land Metric Type',('Choose Land Metric Type','Patch','Class','Landscape'))
+option = st.sidebar.selectbox('Choose Spatial Metrics Type',('Choose Spatial Metrics Type','Patch','Class','Landscape'))
 
 if (option == 'Patch'):
     #option1.selectbox('Choose Patch Metric Type',patch_option)
-    option1 = st.sidebar.selectbox('Choose Patch Metric Type',patch_option)
+    option1 = st.sidebar.selectbox('Choose Patch Metrics Type',patch_option)
 
 
 elif (option == 'Class'):
-    option1 = st.sidebar.selectbox('Choose Class Metric Type',Class_option)
+    option1 = st.sidebar.selectbox('Choose Class Metrics Type',Class_option)
 
 elif (option == 'Landscape'):
-    option1 = st.sidebar.selectbox('Choose Landscape Metric Type',landscape_option)
+    option1 = st.sidebar.selectbox('Choose Landscape Metrics Type',landscape_option)
 
 else:
   option1 = ""
